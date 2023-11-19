@@ -1,8 +1,8 @@
 # Define the action to be performed by the task
 $action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument '-WindowStyle Hidden -Command {
 if (-not (docker ps --filter "name=Mobockerc" --format "{{.Names}}" | Where-Object { $_ -eq "Mobockerc" })) {
-    docker rm -f Mobockerc
-    docker run -d --restart always --name Mobockerc mobocker
+    docker rm -f Mobockerc ;
+    docker run -d --restart always --name Mobockerc mobocker ;
 }
 }
 '
