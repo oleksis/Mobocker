@@ -18,7 +18,7 @@ The dummest container, is the smaller running container to keep Docker daemon al
 
 ```bash
 docker build -t mobocker .
-docker run --name Mobockerc -d mobocker
+docker run -d --restart always --name Mobockerc mobocker
 ```
 
 ## License
