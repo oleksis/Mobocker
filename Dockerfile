@@ -1,6 +1,5 @@
 # Mobocker
 FROM alpine
 
-COPY --chmod=0755 infinite.sh /infinite.sh
-
-CMD ["/bin/sh", "/infinite.sh"]
+# Run tail -f /dev/null to keep the container running
+CMD ["tail", "-f", "/dev/null"]
