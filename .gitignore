@@ -1,0 +1,18 @@
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# Ignore data directories created by containers
+data/
+
+# Ignore build / cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*~ 
+*.egg-info/
+dist/
+build/
