@@ -1,4 +1,5 @@
 # Mobocker
 FROM mcr.microsoft.com/windows/nanoserver:1809
 
-CMD ["cmd", "/q", "/c", "echo", "Container started. To stop, use docker stop.", "&", "pause"]
+# Run ping to keep the container running
+CMD ["cmd", "/c", "ping", "-t", "localhost"]
