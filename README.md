@@ -9,7 +9,7 @@ The dummest container, is the smaller running container to keep Docker daemon al
 ## Steps
 
 - To keep the docker daemon service running infinity.
-- Keep the docker enginge in "Resource Saver mode" disabled.
+- Keep the docker engine in "Resource Saver mode" disabled.
 - If Docker Desktop GUI keep the status "Engine running" mode all work as expected.
 - When the dockerd service in Windows is in "Resource Saver mode" enabled automatically stopping the Docker Desktop Linux VM when no containers are running for a period of time by default 5 mins.
 - If "Resource Saver mode" is on the Docker Desktop GUI crash and closes unexpectedly
