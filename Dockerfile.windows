@@ -1,5 +1,11 @@
+# syntax=docker/dockerfile:1
+# escape=`
 # Mobocker
 FROM mcr.microsoft.com/windows/nanoserver:1809
+LABEL maintainer="Oleksis Fraga <oleksis.fraga at gmail.com>"
+LABEL org.opencontainers.image.source=https://github.com/oleksis/Mobocker
+LABEL org.opencontainers.image.description="Mobocker"
+LABEL org.opencontainers.image.licenses=MIT
 
 # Run ping to keep the container running
 CMD ["cmd", "/c", "ping", "-t", "localhost"]
